@@ -73,6 +73,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# FZF configuration (must be set before loading plugins)
+export FZF_BASE="/home/linuxbrew/.linuxbrew/opt/fzf"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -122,5 +125,3 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
-
-export FZF_BASE="/home/linuxbrew/.linuxbrew/opt/fzf"
